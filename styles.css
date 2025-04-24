@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif;
+}
+
+.heading{
+    text-align:center;
+    text-decoration:underline;
+}
+
+input{
+    width: 100px;
+    height: 15px;
+    border: 1px solid black;
+}
+
+.card_collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    row-gap: 25px;
+    margin:20px 0px 20px 0px;
+}
+
+.cards{
+    height: 250px;
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px silver;
+}
+
+img{
+    height: 8vh;
+    border-radius: 10px;
+}
+
+.name{
+    font-weight: 900;
+    font-size: x-large;
+    font-weight:normal;
+}
+
+.price{
+    font-size: larger;
+    font-weight:normal;
+}
+
+
+.others{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(168, 214, 255);
+    font-size: medium;
+    box-sizing: border-box;
+    width: 20vw;
+    height: fit-content;
+}
+
+.coin-data-select{
+    width: 15vw;
+    height: 25px;
+    border-radius: 5px;
+    font-size: medium;
+}
