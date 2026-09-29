@@ -4,9 +4,10 @@ const fetchuser = createAsyncThunk(
     'coin/fetch',
     async (args, thunkAPI) => {
         try {
-            const response = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=${args}`);
+            // Bas API URL change kar di hai (CoinCap Keyless Endpoint)
+            const response = await fetch(`https://api.coincap.io/v2/assets?limit=${args}`);
             const data = await response.json();
-            return data;
+            return data.data; // CoinCap ka main array data.data ke andar hota hai
         } catch (error) {
             return thunkAPI.rejectWithValue(error.message);
         }
