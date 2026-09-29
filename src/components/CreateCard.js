@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export default function CreateCard({values})
 {
     const [selectedOption , setOption] = useState("");
-    const dollar_values = ["current_price", "market_cap", "fully_diluted_valuation", "total_volume", "high_24h", "low_24h", "price_change_24h", "market_cap_change_24h"]; 
+    const dollar_values = ["current_price", "market_cap", "fully_diluted_valuation", "total_volume", "price_change_24h"]; 
 
     return(
       <>
